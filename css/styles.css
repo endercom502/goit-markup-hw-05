@@ -2,6 +2,12 @@ figure {
   padding: 0;
   margin: 0;
 }
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 a {
   text-decoration: none;
 }
@@ -22,6 +28,19 @@ main {
 ::selection {
   color: #fff;
   background-color: #2196f3;
+}
+.club {
+  padding: 0;
+  margin: 0;
+}
+.club::after {
+  display: flex;
+  content: " ";
+  border-bottom: 4px solid #2196F3;
+  padding-top: 28px;
+  width: 53px;
+  justify-content: space-around;
+  margin: 0;
 }
 .flex-gallery {
   display: flex;
@@ -65,12 +84,15 @@ main {
 }
 .container-1200 {
   display: flex;
-  align-items: baseline;
   padding-left: 12.5%;
   padding-right: 12.5%;
+  padding-bottom: 0px;
   justify-content: space-between;
+  justify-items: center;
   flex-basis: 33%;
   border-bottom: solid 1px #ECECEC;
+  align-items: center;
+  margin-bottom: 0px;
 }
 .container-button {
   display: flex;
@@ -86,8 +108,8 @@ main {
 }
 .flex-element {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  align-self: baseline;
 }
 .container-lorem {
   display: flex;
@@ -101,6 +123,8 @@ main {
   justify-content: space-between;
   flex-direction: row;
   width: 300px;
+  justify-items: center;
+  margin-top: 32px;
 }
 .ul-style-2 {
   list-style: none;
@@ -192,6 +216,7 @@ button:active {
   padding-bottom: 60px;
 }
 .logo {
+  align-self: center;
   color: #2196f3;
   font-family: "Releway";
   font-weight: 700;
@@ -235,6 +260,7 @@ button:active {
   font-weight: 500;
   line-height: 1.14;
   padding-left: 0px;
+  list-style: none;
 }
 .button-big {
   background-color: #2196f3;
