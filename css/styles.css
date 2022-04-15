@@ -35,6 +35,9 @@ main {
 .item-photo {
   margin-right: 30px;
   margin-bottom: 30px;
+  transition-property: box-shadow, cursor;
+  transition-duration: 250ms;
+  cubic-bezier: 0.4, 0, 0.2, 1);
 }
 .item-photo:nth-child(3n+3) {
   margin-right: 0;
@@ -126,6 +129,19 @@ padding-right: 30px;
 button {
   cursor: pointer;
 }
+.next-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #f5f4fa;
+  border: #fff;
+  line-height: 1.62;
+  margin-right: 8px;
+  transition-property: box-shadow, cursor, border-radius, text-align, 
+  background-color, color, border, line-height, margin-left;
+  transition-duration: 250ms;
+  cubic-bezier: 0.4, 0, 0.2, 1);
+}
 .next-button:hover {
   border-radius: 4px;
   text-align: center;
@@ -194,6 +210,9 @@ button:active {
 .a-link {
   color: #212121;
   padding: 0;
+  transition-property: cursor, fill, color;
+  transition-duration: 250ms;
+  cubic-bezier: 0.4, 0, 0.2, 1);
 }
 .a-link:link {
   text-decoration: #2196f3;
@@ -202,7 +221,6 @@ button:active {
   cursor: pointer;
   color: #2196f3;
   fill: #2196f3;
-  cursor: pointer;
 }
 .a-link:active {
   color: #2196f3;
@@ -317,15 +335,6 @@ button:active {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   line-height: 1.62;
 }
-.next-button {
-  padding: 6px 22px;
-  border-radius: 4px;
-  text-align: center;
-  background-color: #f5f4fa;
-  border: #fff;
-  line-height: 1.62;
-  margin-right: 8px;
-}
 .flex-photo-1 {
   display: flex;
   flex-direction: row;
@@ -359,6 +368,9 @@ button:active {
   border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 94px;
+  transition-property: border, cursor;
+  transition-duration: 250ms;
+  cubic-bezier: 0.4, 0, 0.2, 1);
 }
 .clients:hover {
   border: solid 1px #2196F3;
@@ -388,6 +400,10 @@ button:active {
   stroke: #AFB1B8;
   fill-opacity: 1;
   stroke-width: 0;
+  transition-property: fill, cursor, border, fill-opacity, 
+  stroke-width;
+  transition-duration: 250ms;
+  cubic-bezier: 0.4, 0, 0.2, 1);
 }
 .clients-graphics:hover {
   fill: #2196F3;
@@ -451,6 +467,9 @@ button:active {
 }
 .workers-span {
   list-style: none;
+  transition-property: stroke, cursor, fill, fill-opacity;
+  transition-duration: 25000ms;
+  cubic-bezier: 0.4, 0, 0.2, 1);
 }
 .social-div {
   display: flex;
@@ -479,6 +498,9 @@ button:active {
 .workers-span-1 {
   list-style: none;
   flex-grow: 1;
+  transition-property: fill, cursor, stroke, fill-opacity;
+  transition-duration: 250ms;
+  cubic-bezier: 0.4, 0, 0.2, 1);
 }
 .workers-span-1 > li > svg > svg > use:hover {
   fill: #FFFFFF;
