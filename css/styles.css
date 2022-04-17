@@ -477,13 +477,19 @@ button:active {
   fill: #AFB1B8;
   stroke: #AFB1B8;
 }
-.workers-span-3 circle:hover {
-  stroke: #FFFFFF;
-  fill: #2196F3;
-  fill-opacity: 1;
-  cursor: pointer;
+.workers-span-3 {
+  background-color: transparent;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #AFB1B8;
+  stroke: #AFB1B8;
+  transition-property: cursor, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.workers-span-3 use:hover {
+.workers-span-3:hover {
+  background-color: #2196F3;
   fill: #FFFFFF;
   stroke: #FFFFFF;
   cursor: pointer;
