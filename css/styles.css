@@ -488,9 +488,6 @@ button:active {
   stroke: #FFFFFF;
   cursor: pointer;
 }
-.circle-1 {
-  fill: rgba(255, 255, 255, 0.10);
-}
 .workers-span {
   list-style: none;
   transition-property: stroke, cursor, fill, fill-opacity;
@@ -515,30 +512,30 @@ button:active {
   height: 80px;
   margin-left: 171px;
 }
-.workers-span-1 > li > svg > circle:hover {
-  stroke: #FFFFFF;
-  fill: #2196F3;
-  fill-opacity: 1;
-  cursor: pointer;
-}
 .workers-span-1 {
   list-style: none;
   flex-grow: 1;
-  transition-property: cursor, fill-opacity;
+  transition-property: cursor, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(255, 255, 255, 0.10);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+  stroke-opacity: 0;
 }
-
+.workers-span-1:hover {
+  background-color: #2196F3;
+  cursor: pointer;
+}
 .footer-h {
   flex-basis: 206px;
   text-decoration: none;
   color: #FFFFFF;
   font-size: 14px;
   line-height: 16.41px;
-}
-.workers-svg-1 {
-  fill: #FFFFFF;
-  stroke: #AFB1B8;
 }
 .thumb > .undergounnd {
   display: flex;
