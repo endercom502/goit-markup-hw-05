@@ -614,10 +614,32 @@ button:active {
   width: 1600px;
   height: 1024px;
   position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .modal {
   width: 528px;
   height: 581px;
   position: absolute;
-  transform: translate(50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFFFFF;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    cursor: pointer;
 }
