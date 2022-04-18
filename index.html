@@ -14,6 +14,7 @@
     <title>WebStudio</title>
     <meta charset="utf-8">
 </head>
+<body>
 <header class="container-1200">
     <a href="https://google.com" class="logo a-link"><span class="blue">Web</span><span>Studio</span></a>
 
@@ -48,7 +49,7 @@
     <section class="container-1600">
         <h1 class="title-big">EFEKTYWNE ROZWIĄZANIA
             <br />DLA WASZEGO BIZNESU
-            <br /><button type="button" class="button-big">Zamów usługe</button>
+            <br /><button type="button" class="button-big" data-modal-open>Zamów usługe</button>
         </h1>
     </section>
     <section class="container-clients">
@@ -376,5 +377,13 @@
         </div>
     </div>
 </footer>
+<!-- modal window -->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-btn"
+    </div>
 
+<script src="./modal.js"></script>
+</div>
+</body>
 </html>
