@@ -569,13 +569,10 @@ button:active {
 }
 @keyframes portfoliochange {
   0% {
-  transform: translateY(-294px);
+  transform: scaleY(0%);
 }
-  0.01% {
-    transform: translateY(0px);     
-    }
   100% {
-  transform: translateY(-294px);
+  transform: scaleY(100%);
     }
   }
 .animation {
@@ -595,12 +592,12 @@ button:active {
   font-family: 'Roboto';
   font-weight: 400;
   animation-name: portfoliochange;
-  animation-duration: 500ms;
+  animation-duration: 250ms;
   position: absolute;
-  top: 294px;
+  top: 0px;
   animation-fill-mode: both;
   overflow: hidden;
-  transform-origin: top;
+  transform-origin: bottom;
 }
 .backdrop {
   width: 1600px;
