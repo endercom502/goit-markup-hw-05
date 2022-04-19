@@ -572,8 +572,8 @@ button:active {
   transform: scaleY(0%);
 }
   100% {
-  transform: scaleY(100%);
-    }
+    transform: scaleY(100%);
+  }
   }
 .animation {
   position: relative;
@@ -595,10 +595,12 @@ button:active {
   animation-duration: 250ms;
   position: absolute;
   top: 0px;
-  animation-fill-mode: both;
+  animation-fill-mode: backwards;
   overflow: hidden;
   transform-origin: bottom;
-}
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-play-state: start;
 .backdrop {
   width: 1600px;
   height: 1024px;
