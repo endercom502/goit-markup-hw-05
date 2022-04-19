@@ -598,7 +598,7 @@ button:active {
   animation-duration: 500ms;
   position: absolute;
   top: 294px;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
   overflow: hidden;
   transform-origin: top;
 }
