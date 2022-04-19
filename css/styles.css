@@ -340,6 +340,7 @@ button:active {
   border-left: solid 1px #EEEEEE;
   border-top: 0px;
   position: relative;
+  z-index: 3;
 }
 .photo-center > li {
   text-align: center;
@@ -559,7 +560,7 @@ button:active {
   height: 70px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 16.41px;
+  line-height: 16,41px;
   margin: 0 auto;
 }
 .thumb {
@@ -571,11 +572,12 @@ button:active {
   transform: scaleY(0);
 }
   100% {
-    transform: scaleY(1);
-  }
+  transform: scaleY(1);
+    }
   }
 .animation {
   position: relative;
+  z-index: 0;
 }
 .animation:hover::before {
   content: "Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji";
@@ -593,9 +595,10 @@ button:active {
   animation-duration: 250ms;
   position: absolute;
   top: 0px;
-  animation-fill-mode: backwards;
+  animation-fill-mode: both;
   overflow: hidden;
   transform-origin: bottom;
+}
 .backdrop {
   width: 1600px;
   height: 1024px;
