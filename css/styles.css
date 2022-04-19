@@ -560,7 +560,7 @@ button:active {
   height: 70px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 16,41px;
+  line-height: 16.41px;
   margin: 0 auto;
 }
 .thumb {
@@ -569,10 +569,10 @@ button:active {
 }
 @keyframes portfoliochange {
   0% {
-  transform: scaleY(0%);
+  transform: scaleY(0);
 }
   100% {
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
   }
 .animation {
@@ -600,7 +600,6 @@ button:active {
   transform-origin: bottom;
   animation-direction: alternate;
   animation-iteration-count: 1;
-  animation-play-state: start;
   animation-timing-function: ease-in-out;
 .backdrop {
   width: 1600px;
@@ -633,5 +632,4 @@ button:active {
     background-color: #FFFFFF;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
-    cursor: pointer;
 }
