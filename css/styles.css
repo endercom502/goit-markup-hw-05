@@ -606,6 +606,9 @@ button:active {
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  transition-property: transform;
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal {
   width: 528px;
@@ -630,5 +633,6 @@ button:active {
     background-color: #FFFFFF;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; 
+    
 }
